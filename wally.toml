@@ -1,0 +1,11 @@
+[package]
+name = "pbs-community/pbs-rewrite"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = ["**"]
+private = true
+
+[dependencies]
+PakNet = "isoopod/paknet@^0.2.2"
+Pack = "isoopod/pack@^0.6.0"

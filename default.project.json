@@ -1,0 +1,12 @@
+{
+  "name": "PBS-Rewrite",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Packages": {
+        "$path": "Packages"
+      }
+    }
+  }
+}
