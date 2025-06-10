@@ -7,5 +7,5 @@ exclude = ["**"]
 private = true
 
 [dependencies]
-PakNet = "isoopod/paknet@^0.3"
-Pack = "isoopod/pack@^0.6.0"
+PakNet = "isoopod/paknet@^0.4"
+Pack = "isoopod/pack@^0.7"

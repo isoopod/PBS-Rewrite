@@ -13,14 +13,14 @@ if ($success -and $client.Connected) {
     if (Test-Path -Path "Packages" -PathType Container) {
         Remove-Item -Path "Packages" -Recurse -Force
     }
-    if (Test-Path -Path "ServerPackages" -PathType Container) {
-        Remove-Item -Path "ServerPackages" -Recurse -Force
-    }
+    # if (Test-Path -Path "ServerPackages" -PathType Container) {
+    #     Remove-Item -Path "ServerPackages" -Recurse -Force
+    # }
 
     wally install
 
     rojo sourcemap --output sourcemap.json default.project.json
 
     wally-package-types --sourcemap sourcemap.json Packages/
-    wally-package-types --sourcemap sourcemap.json ServerPackages/
+    #wally-package-types --sourcemap sourcemap.json ServerPackages/
 }
