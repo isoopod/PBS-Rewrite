@@ -9,3 +9,7 @@
 sourcemap.json
 
 Packages/
+
+node_modules
+docs/.vitepress/dist
+docs/.vitepress/cache
