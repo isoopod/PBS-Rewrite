@@ -20,4 +20,10 @@ else {
     else {
         Write-Host "roblox_testez@0.4.1 not found in Packages/__Index."
     }
+
+    
+    $reactContents = "-- selene: allow(global_usage)`n_G.__DEV__ = game:GetService('RunService'):IsStudio()`n"
+    $reactContents = $reactContents + (Get-Content -Path .\Packages\React.lua -Encoding ASCII -Raw)
+
+    Set-Content -Path .\Packages\React.lua -Value $reactContents -Encoding ASCII
 }
