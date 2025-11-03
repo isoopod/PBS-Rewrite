@@ -1,12 +1,25 @@
 {
-  "name": "PBS-Rewrite",
-  "tree": {
-    "$className": "DataModel",
+	"name": "PBS-Rewrite",
+	"tree": {
+		"$className": "DataModel",
 
-    "ReplicatedStorage": {
-      "Packages": {
-        "$path": "Packages"
-      }
-    }
-  }
+		"ReplicatedStorage": {
+			"Packages": {
+				"$path": "Packages"
+			},
+			"PBSReplicated": {
+				"$path": "src/PBSReplicated",
+				"$ignoreUnknownInstances": true
+			}
+		},
+		"ServerStorage": {
+			"Development": {
+				"$path": "src/Development",
+				"$ignoreUnknownInstances": true,
+				"DevPackages": {
+					"$path": "DevPackages"
+				}
+			}
+		}
+	}
 }

@@ -9,6 +9,7 @@
 sourcemap.json
 
 Packages/
+DevPackages/
 
 node_modules
 docs/.vitepress/dist

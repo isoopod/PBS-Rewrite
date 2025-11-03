@@ -1,26 +1,23 @@
 # We want to make sure Rojo is not Live-Syncing because it will cause an error
 $port = 34872 # Default Rojo port
-$client = New-Object System.Net.Sockets.TcpClient
-$async = $client.BeginConnect("localhost", $port, $null, $null)
-$success = $async.AsyncWaitHandle.WaitOne(1)
+$listener = Get-NetTCPConnection -LocalPort $port -ErrorAction SilentlyContinue
 
-if ($success -and $client.Connected) {
-    $client.Close()
+if ($listener -and $listener.State -eq "Listen") {
     Write-Warning "Stop your Rojo Live-Sync server before running this script."
-} else {
-    # Remove old packages folders
-    # This allows us to use caret versions
-    if (Test-Path -Path "Packages" -PathType Container) {
-        Remove-Item -Path "Packages" -Recurse -Force
-    }
-    # if (Test-Path -Path "ServerPackages" -PathType Container) {
-    #     Remove-Item -Path "ServerPackages" -Recurse -Force
-    # }
-
+}
+else {
     wally install
 
     rojo sourcemap --output sourcemap.json default.project.json
 
-    wally-package-types --sourcemap sourcemap.json Packages/
-    #wally-package-types --sourcemap sourcemap.json ServerPackages/
+    wally-package-types --sourcemap sourcemap.json Packages DevPackages
+    
+    $testezPath = "Packages\_Index\roblox_testez@0.4.1"
+    if (Test-Path $testezPath) {
+        Remove-Item -Recurse -Force $testezPath
+        Write-Host "Removed roblox_testez@0.4.1 from Packages/__Index."
+    }
+    else {
+        Write-Host "roblox_testez@0.4.1 not found in Packages/__Index."
+    }
 }

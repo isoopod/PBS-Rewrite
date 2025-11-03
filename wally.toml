@@ -11,3 +11,11 @@ PakNet = "isoopod/paknet@^0.6.5"
 Pack = "isoopod/pack@^0.9.6"
 Signal = "data-oriented-house/lemonsignal@1.10.0"
 Promise = "howmanysmall/typed-promise@4.0.6"
+React = "jsdotlua/react@17.2.1"
+ReactRoblox = "jsdotlua/react-roblox@17.2.1"
+ReactSpring = "chriscerie/react-spring@2.0.0"
+Dash = "dev-alastair/dash@1.1.2"
+InputContextHandler = "ivasmigins/inputcontexthandler@0.1.2"
+
+[dev-dependencies]
+UI_Labs = "pepeeltoro41/ui-labs@2.4.1"
