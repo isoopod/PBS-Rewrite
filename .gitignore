@@ -8,8 +8,8 @@
 *.lock
 sourcemap.json
 
-Packages/
-DevPackages/
+.pesde
+*_packages
 
 node_modules
 docs/.vitepress/dist

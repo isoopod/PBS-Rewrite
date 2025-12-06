@@ -2,5 +2,9 @@
     "markdownlint.config": {
         "no-inline-html": false
     },
-    "stylua.targetReleaseVersion": "latest"
+    "stylua.targetReleaseVersion": "latest",
+    "luau-lsp.ignoreGlobs": [
+        "**/_Index/**",
+        "**/.pesde/**"
+    ]
 }

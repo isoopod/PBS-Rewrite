@@ -5,7 +5,7 @@
 
 		"ReplicatedStorage": {
 			"Packages": {
-				"$path": "Packages"
+				"$path": "roblox_packages"
 			},
 			"PBSReplicated": {
 				"$path": "src/PBSReplicated",
@@ -15,10 +15,7 @@
 		"ServerStorage": {
 			"Development": {
 				"$path": "src/Development",
-				"$ignoreUnknownInstances": true,
-				"DevPackages": {
-					"$path": "DevPackages"
-				}
+				"$ignoreUnknownInstances": true
 			}
 		}
 	}

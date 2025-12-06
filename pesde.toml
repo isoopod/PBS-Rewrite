@@ -1,0 +1,36 @@
+name = "pbs_community/pbs_rewrite"
+version = "0.1.0"
+private = true
+
+[target]
+environment = "roblox"
+
+[indices]
+default = "https://github.com/pesde-pkg/index"
+
+[wally_indices]
+default = "https://github.com/UpliftGames/wally-index"
+
+[scripts]
+roblox_sync_config_generator = ".pesde/scripts/roblox_sync_config_generator.luau"
+sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
+
+[dev_dependencies]
+scripts = { name = "pesde/scripts_rojo", version = "^0.2.0", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.5.1", target = "lune" }
+UI_Labs = { wally = "pepeeltoro41/ui-labs", version = "^2.4.2" }
+
+[engines]
+pesde = "^0.7.0"
+lune = "^0.10.2"
+
+[dependencies]
+PakNet = { wally = "isoopod/paknet", version = "^0.7.0" }
+Pack = { wally = "isoopod/pack", version = "^0.10.0" }
+Signal = { wally = "data-oriented-house/lemonsignal", version = "^1.11.0" }
+Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
+React = { wally = "jsdotlua/react", version = "^17.2.1" }
+ReactRoblox = { wally = "jsdotlua/react-roblox", version = "^17.2.1" }
+ReactSpring = { wally = "chriscerie/react-spring", version = "^2.0.0" }
+Dash = { wally = "dev-alastair/dash", version = "^1.1.2" }
+InputContextHandler = { wally = "ivasmigins/inputcontexthandler", version = "^0.1.2" }
