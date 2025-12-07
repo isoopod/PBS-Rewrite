@@ -6,17 +6,18 @@
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "roblox_packages"
-			},
-			"PBSReplicated": {
-				"$path": "src/PBSReplicated",
-				"$ignoreUnknownInstances": true
-			}
-		},
-		"ServerStorage": {
-			"Development": {
-				"$path": "src/Development",
-				"$ignoreUnknownInstances": true
-			}
+		 	}
+		// ,
+		// 	"PBSReplicated": {
+		// 		"$path": "src/PBSReplicated",
+		// 		"$ignoreUnknownInstances": true
+		// 	}
+		// },
+		// "ServerStorage": {
+		// 	"Development": {
+		// 		"$path": "src/Development",
+		// 		"$ignoreUnknownInstances": true
+		// 	}
 		}
 	}
 }
