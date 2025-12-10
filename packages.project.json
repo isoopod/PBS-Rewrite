@@ -1,0 +1,11 @@
+{
+	"name": "rewrite",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"Packages": {
+				"$path": "roblox_packages"
+			}
+		}
+	}
+}

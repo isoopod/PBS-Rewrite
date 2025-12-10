@@ -5,6 +5,11 @@ name = "pbs_community/pbs_rewrite"
 version = "0.1.0"
 target = "roblox"
 
+[overrides."ReactSpring>TestEZ"]
+wally = "wally#data-oriented-house/lemonsignal"
+version = "^1.11.0"
+index = "default"
+
 [graph."0x5eal/unzip@0.2.0 luau".pkg_ref]
 ref_ty = "pesde"
 index_url = "https://github.com/pesde-pkg/index"
@@ -139,7 +144,7 @@ direct = ["ReactSpring", { wally = "wally#chriscerie/react-spring", version = "^
 Promise = ["wally#evaera/promise@4.0.0 roblox", "standard"]
 React = ["wally#jsdotlua/react@17.2.1 roblox", "standard"]
 ReactRoblox = ["wally#jsdotlua/react-roblox@17.2.1 roblox", "standard"]
-TestEZ = ["wally#roblox/testez@0.4.1 roblox", "standard"]
+TestEZ = ["wally#data-oriented-house/lemonsignal@1.11.0 roblox", "standard"]
 
 [graph."wally#chriscerie/react-spring@2.0.0 roblox".pkg_ref]
 ref_ty = "wally"
@@ -209,13 +214,6 @@ index_url = "https://github.com/UpliftGames/wally-index"
 Pack = [{ wally = "wally#isoopod/pack", version = ">=0.10.1, <0.11.0", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
 Promise = [{ wally = "wally#howmanysmall/typed-promise", version = ">=4.0.6, <5.0.0", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
 Signal = [{ wally = "wally#data-oriented-house/lemonsignal", version = ">=1.10.0, <2.0.0", index = "https://github.com/UpliftGames/wally-index" }, "standard"]
-
-[graph."wally#ivasmigins/inputcontexthandler@0.1.2 roblox"]
-direct = ["InputContextHandler", { wally = "wally#ivasmigins/inputcontexthandler", version = "^0.1.2", index = "default" }, "standard"]
-
-[graph."wally#ivasmigins/inputcontexthandler@0.1.2 roblox".pkg_ref]
-ref_ty = "wally"
-index_url = "https://github.com/UpliftGames/wally-index"
 
 [graph."wally#jsdotlua/boolean@1.2.7 roblox".dependencies]
 number = ["wally#jsdotlua/number@1.2.7 roblox", "standard"]
@@ -403,9 +401,5 @@ collections = [{ wally = "wally#jsdotlua/collections", version = ">=1.2.7, <2.0.
 direct = ["UI_Labs", { wally = "wally#pepeeltoro41/ui-labs", version = "^2.4.2", index = "default" }, "dev"]
 
 [graph."wally#pepeeltoro41/ui-labs@2.4.2 roblox".pkg_ref]
-ref_ty = "wally"
-index_url = "https://github.com/UpliftGames/wally-index"
-
-[graph."wally#roblox/testez@0.4.1 roblox".pkg_ref]
 ref_ty = "wally"
 index_url = "https://github.com/UpliftGames/wally-index"

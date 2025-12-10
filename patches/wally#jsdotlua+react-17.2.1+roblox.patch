@@ -1,0 +1,24 @@
+diff --git a/sourcemap.json b/sourcemap.json
+new file mode 100644
+index 0000000..e153982
+--- /dev/null
++++ b/sourcemap.json
+@@ -0,0 +1 @@
++{"name":"react","className":"ModuleScript","filePaths":["src/init.luau","default.project.json"],"children":[{"name":"None.roblox","className":"ModuleScript","filePaths":["src/None.roblox.luau"]},{"name":"React","className":"ModuleScript","filePaths":["src/React.luau"]},{"name":"ReactBaseClasses","className":"ModuleScript","filePaths":["src/ReactBaseClasses.luau"]},{"name":"ReactBinding.roblox","className":"ModuleScript","filePaths":["src/ReactBinding.roblox.luau"]},{"name":"ReactChildren","className":"ModuleScript","filePaths":["src/ReactChildren.luau"]},{"name":"ReactContext","className":"ModuleScript","filePaths":["src/ReactContext.luau"]},{"name":"ReactCreateRef","className":"ModuleScript","filePaths":["src/ReactCreateRef.luau"]},{"name":"ReactElement","className":"ModuleScript","filePaths":["src/ReactElement.luau"]},{"name":"ReactElementValidator","className":"ModuleScript","filePaths":["src/ReactElementValidator.luau"]},{"name":"ReactForwardRef","className":"ModuleScript","filePaths":["src/ReactForwardRef.luau"]},{"name":"ReactHooks","className":"ModuleScript","filePaths":["src/ReactHooks.luau"]},{"name":"ReactLazy","className":"ModuleScript","filePaths":["src/ReactLazy.luau"]},{"name":"ReactMemo","className":"ModuleScript","filePaths":["src/ReactMemo.luau"]},{"name":"ReactMutableSource","className":"ModuleScript","filePaths":["src/ReactMutableSource.luau"]},{"name":"ReactNoopUpdateQueue","className":"ModuleScript","filePaths":["src/ReactNoopUpdateQueue.luau"]},{"name":"createSignal.roblox","className":"ModuleScript","filePaths":["src/createSignal.roblox.luau"]}]}
+\ No newline at end of file
+diff --git a/src/init.luau b/src/init.luau
+index 18987f3..2df20ed 100644
+--- a/src/init.luau
++++ b/src/init.luau
+@@ -9,7 +9,10 @@
+  * @flow
+  *]]
+ 
+--- ROBLOX deviation: simulates `index.js` and exports React's public interface
++-- selene: allow(global_usage)
++_G.__DEV__ = game:GetService("RunService"):IsStudio()
++
++ -- ROBLOX deviation: simulates `index.js` and exports React's public interface
+ local LuauPolyfill = require(script.Parent:WaitForChild('luau-polyfill'))
+ export type Object = LuauPolyfill.Object
+ 

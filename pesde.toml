@@ -34,4 +34,9 @@ React = { wally = "jsdotlua/react", version = "^17.2.1" }
 ReactRoblox = { wally = "jsdotlua/react-roblox", version = "^17.2.1" }
 ReactSpring = { wally = "chriscerie/react-spring", version = "^2.0.0" }
 Dash = { wally = "dev-alastair/dash", version = "^1.1.2" }
-InputContextHandler = { wally = "ivasmigins/inputcontexthandler", version = "^0.1.2" }
+
+[patches]
+"wally#jsdotlua/react" = { "17.2.1 roblox" = "patches/wally#jsdotlua+react-17.2.1+roblox.patch" }
+
+[overrides]
+"ReactSpring>TestEZ" = "Signal" # Just point TestEZ to something thats already installed since its unused by ReactSpring

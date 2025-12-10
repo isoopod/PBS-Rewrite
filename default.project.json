@@ -11,5 +11,9 @@
 			},
 			"$path": "src/ReplicatedStorage"
 		}
+	},
+	"syncback": {
+		"ignoreGlobs": ["**/.pesde/**", "roblox_packages/**"],
+		"ignoreNames": ["Packages", "wally"]
 	}
 }
