@@ -5,12 +5,20 @@
 /*.rbxlx.lock
 /*.rbxl.lock
 
-*.lock
+# WHILE IN DEVELOPMENT:
+# Hide source files until we are ready to release
+src/ReplicatedStorage/*
+src/ServerScriptService/*
+# These files are managed by Argon
+
+# Argon sourcemap
 sourcemap.json
 
+# Pesde files
 .pesde
 *_packages
 
+# Vitepress docs
 node_modules
 docs/.vitepress/dist
 docs/.vitepress/cache

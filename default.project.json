@@ -1,12 +1,15 @@
 {
-  "name": "rewrite",
-  "tree": {
-    "$className": "DataModel"
-  },
-  "ServerScriptService": {
-
-  },
-  "ReplicatedStorage": {
-
-  }
+	"name": "rewrite",
+	"tree": {
+		"$className": "DataModel",
+		"ServerScriptService": {
+			"$path": "src/ServerScriptService"
+		},
+		"ReplicatedStorage": {
+			"Packages": {
+				"$path": "roblox_packages"
+			},
+			"$path": "src/ReplicatedStorage"
+		}
+	}
 }
