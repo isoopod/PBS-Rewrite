@@ -9,9 +9,11 @@
 # Hide source files until we are ready to release
 src/ReplicatedStorage/*
 src/ServerScriptService/*
+src/ServerStorage/*
 # But keep the folders themselves
 !src/ReplicatedStorage/.gitkeep
 !src/ServerScriptService/.gitkeep
+!src/ServerStorage/.gitkeep
 # These files are managed by Argon
 
 # Argon sourcemap

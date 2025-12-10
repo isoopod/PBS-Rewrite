@@ -5,6 +5,9 @@
 		"ServerScriptService": {
 			"$path": "src/ServerScriptService"
 		},
+		"ServerStorage": {
+			"$path": "src/ServerStorage"
+		},
 		"ReplicatedStorage": {
 			"Packages": {
 				"$path": "roblox_packages"
