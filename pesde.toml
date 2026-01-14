@@ -26,8 +26,8 @@ pesde = "^0.7.0"
 lune = "^0.10.2"
 
 [dependencies]
-PakNet = { wally = "isoopod/paknet", version = "^0.7.0" }
-Pack = { wally = "isoopod/pack", version = "^0.10.0" }
+PakNet = { wally = "isoopod/paknet", version = "^0.7.1" }
+Pack = { name = "isoopod/pack", version = "^0.10.1" }
 Signal = { wally = "data-oriented-house/lemonsignal", version = "^1.11.0" }
 Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
 React = { wally = "jsdotlua/react", version = "^17.2.1" }
@@ -40,3 +40,4 @@ Dash = { wally = "dev-alastair/dash", version = "^1.1.2" }
 
 [overrides]
 "ReactSpring>TestEZ" = "Signal" # Just point TestEZ to something thats already installed since its unused by ReactSpring
+"PakNet>Pack" = "Pack" # Make it use the pesde release of Pack
