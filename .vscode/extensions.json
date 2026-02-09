@@ -1,8 +1,8 @@
 {
 	"recommendations": [
-		"dervex.argon",
 		"johnnymorganz.luau-lsp",
 		"kampfkarren.selene-vscode",
-		"johnnymorganz.stylua"
+		"johnnymorganz.stylua",
+		"dvitash.verde"
 	]
 }
