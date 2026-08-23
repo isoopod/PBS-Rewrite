@@ -18,16 +18,16 @@ sourcemap_generator = ".pesde/scripts/sourcemap_generator.luau"
 [dev_dependencies]
 UI_Labs = { wally = "pepeeltoro41/ui-labs", version = "^2.4.2" }
 scripts = { name = "pesde/scripts_rojo", version = "^0.2.0", target = "lune" }
-rojo = { name = "pesde/rojo", version = "^7.6.1", target = "lune" }
+rojo = { name = "pesde/rojo", version = "^7.7.0", target = "lune" }
 
 [engines]
 pesde = "^0.7.0"
 lune = "^0.10.2"
 
 [dependencies]
-PakNet = { wally = "isoopod/paknet", version = "^0.7.1" }
-Pack = { name = "isoopod/pack", version = "^0.10.1" }
-Signal = { wally = "data-oriented-house/lemonsignal", version = "^1.11.0" }
+PakNet = { name = "isoopod/paknet", version = "^0.9.0" }
+Pack = { name = "isoopod/pack", version = "^0.12.0" }
+Signal = { wally = "data-oriented-house/lemonsignal", version = "^2.0.0" }
 Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
 React = { wally = "jsdotlua/react", version = "^17.2.1" }
 ReactRoblox = { wally = "jsdotlua/react-roblox", version = "^17.2.1" }
@@ -39,4 +39,3 @@ Dash = { wally = "dev-alastair/dash", version = "^1.1.2" }
 
 [overrides]
 "ReactSpring>TestEZ" = "Signal" # Just point TestEZ to something thats already installed since its unused by ReactSpring
-"PakNet>Pack" = "Pack" # Make it use the pesde release of Pack

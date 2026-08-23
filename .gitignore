@@ -10,6 +10,7 @@
 sync
 # These files are managed by Azul
 
+sourcemap-pkgs.json
 sourcemap.json
 
 # Pesde files
