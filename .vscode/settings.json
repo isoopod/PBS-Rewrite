@@ -1,10 +1,8 @@
 {
-	"markdownlint.config": {
-		"no-inline-html": false
-	},
 	"stylua.targetReleaseVersion": "latest",
 	"luau-lsp.ignoreGlobs": ["**/_Index/**", "**/.pesde/**"],
 	"luau-lsp.sourcemap.enabled": true,
 	"luau-lsp.sourcemap.autogenerate": false,
-	"luau-lsp.sourcemap.useVSCodeWatcher": true
+	"luau-lsp.sourcemap.useVSCodeWatcher": true,
+	"luau-lsp.completion.imports.useConst": true
 }
