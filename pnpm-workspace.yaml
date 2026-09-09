@@ -1,0 +1,4 @@
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - azul-sync@2.1.0

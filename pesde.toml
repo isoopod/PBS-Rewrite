@@ -26,7 +26,7 @@ lune = "^0.10.2"
 
 [dependencies]
 PakNet = { name = "isoopod/paknet", version = "^0.9.0" }
-Pack = { name = "isoopod/pack", version = "^0.12.0" }
+Pack = { name = "isoopod/pack", version = "^0.12.1" }
 Signal = { wally = "data-oriented-house/lemonsignal", version = "^2.0.0" }
 Promise = { wally = "howmanysmall/typed-promise", version = "^4.0.6" }
 React = { wally = "jsdotlua/react", version = "^17.2.1" }
